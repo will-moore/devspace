@@ -149,9 +149,9 @@ done
 
 # get back to /home/omero/workspace/OMERO-web/
 cd $WORKSPACE
-omero config append omero.web.apps '"omero_iviewer"'
+omero config append omero.web.apps &apos;&quot;omero_iviewer&quot;&apos;
 omero config set omero.web.viewer.view omero_iviewer.views.index
-omero config append omero.web.open_with '["omero_iviewer", "omero_iviewer_index", {"supported_objects":["images", "dataset", "well"], "script_url": "omero_iviewer/openwith.js", "label": "OMERO.iviewer"}]'
+omero config append omero.web.open_with &apos;[&quot;omero_iviewer&quot;, &quot;omero_iviewer_index&quot;, {&quot;supported_objects&quot;:[&quot;images&quot;, &quot;dataset&quot;, &quot;well&quot;], &quot;script_url&quot;: &quot;omero_iviewer/openwith.js&quot;, &quot;label&quot;: &quot;OMERO.iviewer&quot;}]&apos;
 
 # OMERO.figure installation - including figure submodule
 pip uninstall -y omero-figure
