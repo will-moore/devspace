@@ -148,7 +148,7 @@ for x in *.tar.gz; do
 done
 
 # get back to /home/omero/workspace/OMERO-web/
-cd ../../../
+cd $WORKSPACE
 omero config append omero.web.apps '"omero_iviewer"'
 omero config set omero.web.viewer.view omero_iviewer.views.index
 omero config append omero.web.open_with '["omero_iviewer", "omero_iviewer_index", {"supported_objects":["images", "dataset", "well"], "script_url": "omero_iviewer/openwith.js", "label": "OMERO.iviewer"}]'
