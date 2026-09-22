@@ -167,7 +167,7 @@ cd dist
 for x in *.tar.gz; do
     pip install -U $x # install figure
 done
-cd ../../
+cd $WORKSPACE
 omero config append omero.web.apps &apos;&quot;omero_figure&quot;&apos;
 omero config append omero.web.ui.top_links &apos;[&quot;Figure&quot;, &quot;figure_index&quot;, {&quot;title&quot;: &quot;Open Figure in new tab&quot;, &quot;target&quot;: &quot;_blank&quot;}]&apos;
 omero config append omero.web.open_with &apos;[&quot;omero_figure&quot;, &quot;new_figure&quot;, {&quot;supported_objects&quot;:[&quot;images&quot;], &quot;target&quot;: &quot;_blank&quot;, &quot;label&quot;: &quot;OMERO.figure&quot;}]&apos;
